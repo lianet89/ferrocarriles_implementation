@@ -18,13 +18,15 @@ public class Locomotora extends EquipoDeTraccion{
 
     @Override
     public int cantidadMaxCoches() {
-        int i=0;
+        int i;
         if (marcaFabricante.equalsIgnoreCase("SD50")){
             i=10;
         } else if (marcaFabricante.equalsIgnoreCase("DF76")) {
             i= 15;
         } else if (marcaFabricante.equalsIgnoreCase("MLW")) {
             i=20;
+        } else {
+            i=0;
         }
         return i;
     }
